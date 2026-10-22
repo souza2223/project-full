@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171512">
+  <meta name="description" content="Kimkim Lanches — pizzas irresistíveis, hambúrgueres artesanais e momentos que merecem sabor.">
+  <title>Kimkim Lanches — Sabor que reúne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> SEU PRÓXIMO MOMENTO FAVORITO COMEÇA AQUI <span class="announcement-star">✳</span></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Kimkim Lanches — início">
+      <span class="brand-mark">K<span>k</span></span>
+      <span class="brand-copy"><strong>kimkim</strong><small>LANCHES · PIZZARIA</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="nav-link active" href="#inicio">Início</a>
+      <a class="nav-link" href="#cardapio">Cardápio</a>
+      <a class="nav-link" href="#sobre">Nossa história</a>
+      <a class="nav-link" href="#experiencia">Por que Kimkim?</a>
+    </nav>
+    <button class="header-order" data-open-cart>Monte seu pedido <span>↗</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texture"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> FEITO PARA DAR VONTADE</div>
+        <h1>Seu desejo.<br>Nosso <em>melhor</em><br>sabor.</h1>
+        <p class="hero-description">Da primeira mordida à última fatia, cada detalhe é pensado para transformar a fome em um momento especial.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#cardapio">Explore o cardápio <span>↗</span></a>
+          <a class="text-link" href="#sobre"><span class="play-icon">▶</span> Conheça a Kimkim</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-avatars"><span>K</span><span>♥</span><span>✳</span></div>
+          <div><strong>Feito com vontade de fazer bem</strong><small>Ingredientes, cuidado e muito sabor.</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-main">
+          <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=85" alt="Pizza artesanal recém-saída do forno" fetchpriority="high">
+        </div>
+        <div class="hero-image-small"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=85" alt="Hambúrguer artesanal suculento"></div>
+        <div class="hero-stamp"><span>FEITO COM</span><strong>♥</strong><span>DE VERDADE</span></div>
+        <div class="image-caption"><span class="caption-line"></span><span>O sabor que faz voltar.</span></div>
+        <div class="floating-note"><span class="note-icon">✳</span><span><strong>Bom demais</strong><small>pra dividir (ou não)</small></span></div>
+      </div>
+      <a class="scroll-cue" href="#cardapio"><span></span> DESCUBRA O CARDÁPIO</a>
+    </section>
+
+    <section class="ticker" aria-label="Especialidades">
+      <div class="ticker-track"><span>PIZZA ARTESANAL</span><b>✳</b><span>HAMBÚRGUER DE RESPEITO</span><b>✳</b><span>FEITO PRA COMPARTILHAR</span><b>✳</b><span>SEU MOMENTO, SEU SABOR</span><b>✳</b><span>PIZZA ARTESANAL</span><b>✳</b><span>HAMBÚRGUER DE RESPEITO</span><b>✳</b></div>
+    </section>
+
+    <section class="menu-section section-pad" id="cardapio">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-line"></span> ESCOLHAS QUE DÃO ÁGUA NA BOCA</div><h2>O difícil é<br><em>escolher só um.</em></h2></div>
+        <p>Tem dia de pizza, dia de hambúrguer… e tem dia que merece os dois. Qual vai ser o seu?</p>
+      </div>
+      <div class="menu-toolbar">
+        <div class="category-tabs" role="group" aria-label="Filtrar cardápio">
+          <button class="category-tab selected" data-filter="todos">Tudo <span>04</span></button>
+          <button class="category-tab" data-filter="pizza">Pizzas <span>02</span></button>
+          <button class="category-tab" data-filter="hamburguer">Hambúrgueres <span>02</span></button>
+        </div>
+        <span class="menu-note"><span>✳</span> Preparado com carinho, servido com sabor.</span>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-category="pizza">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=900&q=85" alt="Pizza artesanal com queijo derretido" loading="lazy"><span class="product-tag">A QUERIDINHA</span><button class="quick-add" data-add="Pizza da Casa" aria-label="Adicionar Pizza da Casa">+</button></div>
+          <div class="product-info"><div class="product-kicker">PIZZA · PARA COMPARTILHAR</div><h3>Pizza da Casa</h3><p>Uma combinação irresistível, massa douradinha e aquele queijo que puxa.</p><div class="product-bottom"><span class="price">Preço a definir</span><button class="add-link" data-add="Pizza da Casa">Adicionar <span>↗</span></button></div></div>
+        </article>
+        <article class="product-card" data-category="hamburguer">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85" alt="Hambúrguer artesanal com queijo e salada" loading="lazy"><span class="product-tag">SEM ERRO</span><button class="quick-add" data-add="Kimkim Burger" aria-label="Adicionar Kimkim Burger">+</button></div>
+          <div class="product-info"><div class="product-kicker">HAMBÚRGUER · ARTESANAL</div><h3>Kimkim Burger</h3><p>Pão macio, carne suculenta e uma mistura de sabores feita pra conquistar.</p><div class="product-bottom"><span class="price">Preço a definir</span><button class="add-link" data-add="Kimkim Burger">Adicionar <span>↗</span></button></div></div>
+        </article>
+        <article class="product-card" data-category="pizza">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85" alt="Pizza com ingredientes frescos" loading="lazy"><span class="product-tag">CLÁSSICO</span><button class="quick-add" data-add="Pizza Clássica" aria-label="Adicionar Pizza Clássica">+</button></div>
+          <div class="product-info"><div class="product-kicker">PIZZA · UM CLÁSSICO</div><h3>Pizza Clássica</h3><p>Uma receita que abraça: ingredientes selecionados e sabor em cada pedaço.</p><div class="product-bottom"><span class="price">Preço a definir</span><button class="add-link" data-add="Pizza Clássica">Adicionar <span>↗</span></button></div></div>
+        </article>
+        <article class="product-card" data-category="hamburguer">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85" alt="Hambúrguer artesanal com batatas" loading="lazy"><span class="product-tag">MATA A FOME</span><button class="quick-add" data-add="Burger Especial" aria-label="Adicionar Burger Especial">+</button></div>
+          <div class="product-info"><div class="product-kicker">HAMBÚRGUER · ESPECIAL</div><h3>Burger Especial</h3><p>Camadas generosas, textura perfeita e sabor que merece uma pausa.</p><div class="product-bottom"><span class="price">Preço a definir</span><button class="add-link" data-add="Burger Especial">Adicionar <span>↗</span></button></div></div>
+        </article>
+      </div>
+      <div class="menu-bottom"><span>ESTA É UMA PRÉVIA VISUAL · CARDÁPIO E VALORES SERÃO PERSONALIZADOS</span><a href="#contato">Quero pedir depois <span>↗</span></a></div>
+    </section>
+
+    <section class="manifesto" id="sobre">
+      <div class="manifesto-image"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=1200&q=85" alt="Pizza artesanal preparada com ingredientes frescos" loading="lazy"><div class="manifesto-image-label"><span>UMA COISA É CERTA</span><strong>Você vai querer<br>mais uma fatia.</strong></div></div>
+      <div class="manifesto-copy"><div class="eyebrow"><span class="eyebrow-line"></span> MAIS QUE MATAR A FOME</div><h2>O sabor mora<br>nos <em>detalhes.</em></h2><p>Acreditamos que comida boa faz mais do que alimentar: aproxima pessoas, celebra pequenas vitórias e transforma uma noite comum em uma noite memorável.</p><p>Por isso, cada pedido merece atenção, cada ingrediente tem seu valor e cada mordida precisa valer a pena.</p><a class="button button-dark" href="#cardapio">Encontre seu favorito <span>↗</span></a><div class="signature"><span class="signature-mark">Kk.</span><span><strong>Kimkim Lanches</strong><small>Sabor que reúne.</small></span></div></div>
+    </section>
+
+    <section class="experience-section section-pad" id="experiencia">
+      <div class="experience-top"><div class="eyebrow"><span class="eyebrow-line"></span> DO NOSSO JEITO, PRA VOCÊ</div><h2>Não é só comida.<br>É <em>experiência.</em></h2></div>
+      <div class="experience-grid"><article><span class="experience-number">01</span><span class="experience-icon">✳</span><h3>Sabor de verdade</h3><p>Receitas pensadas para deixar vontade de repetir.</p></article><article><span class="experience-number">02</span><span class="experience-icon">♡</span><h3>Feito com cuidado</h3><p>O carinho está nos detalhes, do preparo à entrega.</p></article><article><span class="experience-number">03</span><span class="experience-icon">↗</span><h3>Seu momento</h3><p>Para reunir a turma, curtir a dois ou se presentear.</p></article></div>
+    </section>
+
+    <section class="closing-cta" id="contato"><div class="closing-decoration">Kk</div><div class="eyebrow"><span class="eyebrow-line"></span> A FOME JÁ SABE O CAMINHO</div><h2>Hoje combina<br>com <em>Kimkim.</em></h2><p>Seu próximo favorito está esperando por você.</p><a href="#cardapio" class="button button-primary">Escolha seu pedido <span>↗</span></a><span class="closing-footnote">CARDÁPIO EM CONSTRUÇÃO · EM BREVE, MAIS SABOR POR AQUI</span></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">K<span>k</span></span><span class="brand-copy"><strong>kimkim</strong><small>LANCHES · PIZZARIA</small></span></a><span class="footer-tagline">Sabor que reúne.</span><span class="footer-copy">© <span id="year"></span> Kimkim Lanches. Feito com apetite.</span><a class="back-top" href="#inicio">VOLTAR AO TOPO ↑</a></footer>
+
+  <div class="cart-overlay" data-close-cart></div>
+  <aside class="cart-drawer" aria-label="Seu pedido" aria-hidden="true">
+    <div class="cart-header"><div><span class="cart-eyebrow">KIMKIM LANCHES</span><h2>Seu pedido <span class="cart-count">0</span></h2></div><button class="cart-close" data-close-cart aria-label="Fechar carrinho">×</button></div>
+    <p class="cart-intro">Sua próxima refeição começa aqui.</p>
+    <div class="cart-items"><div class="empty-cart"><span>✳</span><strong>Seu carrinho está esperando.</strong><p>Escolha algo gostoso no cardápio para começar.</p><button class="button button-dark" data-close-cart>Explorar cardápio</button></div></div>
+    <div class="cart-footer"><p>Esta é uma demonstração visual. Valores e pedidos serão configurados na próxima etapa.</p><button class="button button-primary checkout-button" disabled>Finalizar pedido <span>↗</span></button></div>
+  </aside>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
